@@ -1,0 +1,42 @@
+theme:
+  colors:
+    primary: "#1f77b4"
+    teal: "#2ca07c"
+    alert: "#ff7f0e"
+    bg: "#f8f9fa"
+    text: "#333333"
+    text_light: "#666666"
+  typography:
+    font_header: "Inter, sans-serif"
+    font_body: "Inter, sans-serif"
+    font_code: "Fira Mono, monospace"
+
+training:
+  max_rows_demo: 5000
+  early_stopping_rounds: 50
+  cv_folds: 3
+  random_seed: 42
+
+forecasting:
+  default_horizon: 30
+  min_horizon: 7
+  max_horizon: 365
+  confidence_intervals: [0.8, 0.95]
+
+anomaly:
+  z_score_threshold: 3.0
+  iqr_multiplier: 1.5
+  min_anomaly_score: 0.7
+
+benchmarking:
+  default_metrics: [efficiency, stability, energy_usage, compliance_rate]
+  period_comparison: [week, month, quarter]
+
+reporting:
+  output_formats: [pdf, pptx, html]
+  default_template: standard
+  include_charts: true
+  include_raw_data: false
+
+
+
